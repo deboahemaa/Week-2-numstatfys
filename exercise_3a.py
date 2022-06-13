@@ -20,8 +20,11 @@ def laplace(N, M, V0, iteration):
         
         con_mon_list.append(E)   
         iteration_list.append(m)
-    plt.imshow(V)
-    plt.colorbar()
+    #plt.imshow(V)
+    #plt.colorbar()
+    plt.plot(con_mon_list, iteration_list)
+    plt.xlabel("convergence monitor")
+    plt.ylabel("iterations")
     plt.show()
     return V
 
